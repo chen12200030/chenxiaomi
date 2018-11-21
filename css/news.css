@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.image-news {
+    width: 984px;
+    margin: 10px auto;
+    /* border:1px solid red; */
+}
+
+.image-news> .title {
+    border-top: 2px solid #999;
+    border-bottom: 1px solid #dee2e6;
+    height: 40px;
+}
+
+
+
+.image-news>.title h1 {
+    font-size: 20px;
+    font-weight: 700;
+    /* border: 1px red solid; */
+    float: left;
+    margin: 5px;
+    padding-right: 20px;
+    background-image: url(..//image/123.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-position: right 12px;
+}
+
+.clearfix::after {
+    clear: both;
+    content: '';
+    visibility: hidden;
+    height: 0;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: #254282;
+}
+
+h1 span {
+    color: #999;
+    font-size: 14px;
+    font-weight: normal;
+    /* capitalize首字母大写  */
+    text-transform: uppercase;
+}
+
+.image-box {
+    margin: 20px 0 0 0;
+}
+
+.image-box .item {
+    width: 187px;
+    float: left;
+    margin-right: 12px;
+    height: 165px;
+}
+
+.item img {
+    width: 187px;
+    display: block；
+}
+.image-box .item:nth-of-type(5n)
+{
+    margin-right:0;
+}
+
+.item a {
+    font-size: 12px; 
+    /* 想要文本居中display：block不可少 */
+    display: block;
+    text-align: center;
+    color: #222222;
+}
+
+.item.title {
+    height: 30px;
+    line-height: 30px;
+}
+
+.item .title:hover {
+    background-color: #3064bb;
+    color: #fff;
+    height: 30px;
+}
